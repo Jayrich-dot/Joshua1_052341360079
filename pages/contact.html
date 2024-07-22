@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Private Bank</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("../images/bank6.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px 0;
+        }
+
+        section .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-form h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-top: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 18px;
+            color: #fff;
+            background: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>JayCee Bank</h2>
+            <p>We are here to help you with any inquiries or support you may need. Please use the contact form below or reach out to us through our contact details.</p>
+            
+            <div class="contact-info">
+                <h3>Our Contact Details</h3>
+                <p><strong>Address:</strong> 123 Bank Street, Adum City, Kumas</p>
+                <p><strong>Phone:</strong> +233 (548138453)</p>
+                <p><strong>Email:</strong> support@jayceebank.com</p>
+                <p><strong>Working Hours:</strong> Monday to Friday, 9:00 AM - 7:00 PM</p>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="submit_contact_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Private Bank. All rights reserved.</p>
+        </div>
+    </footer>
+    <ul>
+        <li><a href="index.html">Return Home</a></li>
+    </ul>
+</body>
+</html>
